@@ -30,8 +30,8 @@ export default function experience() {
     },
   ];
 
-  const listItemsFronted = experiencesFronted.map((experience) => (
-    <article className="experience_details">
+  const listItemsFronted = experiencesFronted.map((experience, index) => (
+    <article key={index} className="experience_details">
       <BsPatchCheckFill className="experience_details" />
       <div>
         <h4>{experience.title}</h4>
@@ -67,8 +67,8 @@ export default function experience() {
     },
   ];
 
-  const listItemsBackend = experiencesBackend.map((experience) => (
-    <article className="experience_details">
+  const listItemsBackend = experiencesBackend.map((experience, index) => (
+    <article key={index} className="experience_details">
       <BsPatchCheckFill className="experience_details" />
       <div>
         <h4>{experience.title}</h4>

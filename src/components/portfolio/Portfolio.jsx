@@ -56,8 +56,8 @@ export default function Portfolio() {
     }
   ];
 
-  const portfolioList = portfolio.map((item) => (
-    <article className='portfolio_item'>
+  const portfolioList = portfolio.map((item, index) => (
+    <article key={index} className='portfolio_item'>
       <div className='portfolio_item-image'>
         <img src={item.img} alt="" />
       </div>
