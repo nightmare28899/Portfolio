@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
 import './portfolio.css'
 import IMG1 from '../../assets/portfolio1.jpg'
@@ -8,65 +9,75 @@ import IMG5 from '../../assets/portfolio5.png'
 import IMG6 from '../../assets/portfolio6.jpg'
 
 export default function Portfolio() {
+
+  const portfolio = [
+    {
+      id: 1,
+      img: IMG1,
+      title: 'Paper, Rock, Scissors',
+      page: 'https://github.com/nightmare28899/paper-game',
+      description: 'A simple game of paper, rock, scissors, spock and lizard, is made it with angular 14.',
+      demo: 'https://voluble-puppy-a4b8ff.netlify.app/',
+    },
+    {
+      id: 2,
+      img: IMG2,
+      title: 'This is a portfolio item title',
+      page: 'https://github.com',
+      demo: 'https://dribbble.com/Alien_pixels',
+    },
+    {
+      id: 3,
+      img: IMG3,
+      title: 'This is a portfolio item title',
+      page: 'https://github.com',
+      demo: 'https://dribbble.com/Alien_pixels',
+    },
+    {
+      id: 4,
+      img: IMG4,
+      title: 'This is a portfolio item title',
+      page: 'https://github.com',
+      demo: 'https://dribbble.com/Alien_pixels',
+    },
+    {
+      id: 5,
+      img: IMG5,
+      title: 'This is a portfolio item title',
+      page: 'https://github.com',
+      demo: 'https://dribbble.com/Alien_pixels',
+    },
+    {
+      id: 6,
+      img: IMG6,
+      title: 'This is a portfolio item title',
+      page: 'https://github.com',
+      demo: 'https://dribbble.com/Alien_pixels',
+    }
+  ];
+
+  const portfolioList = portfolio.map((item) => (
+    <article className='portfolio_item'>
+      <div className='portfolio_item-image'>
+        <img src={item.img} alt="" />
+      </div>
+      <h3>{item.title}</h3>
+      <p><b>Description:</b> {item.description} </p>
+      <div className='portfolio_item-cta'>
+        <a href={item.page} className='btn'>Github</a>
+        <a href={item.demo} className='btn btn-primary' target='_blank' rel="noreferrer">Live Demo</a>
+      </div>
+    </article>
+  ));
+
   return (
     <section id='portfolio'>
       <h5>My Recent Work</h5>
       <h2>Portfolio</h2>
 
       <div className='container portfolio_container'>
-        <article className='portfolio_container'>
-          <div className='portfolio_item-image'>
-            <img src={IMG1} alt="" />
-          </div>
-          <h3>This is a portfolio item title</h3>
-          <a href="#" className='btn'>Github</a>
-          <a href="https://dribbble.com/Alien_pixels" className='btn btn-primary' target='_blank'>Live Demo</a>
-        </article>
+        {portfolioList}
 
-        <article className='portfolio_container'>
-          <div className='portfolio_item-image'>
-            <img src={IMG2} alt="" />
-          </div>
-          <h3>This is a portfolio item title</h3>
-          <a href="#" className='btn'>Github</a>
-          <a href="https://dribbble.com/Alien_pixels" className='btn btn-primary' target='_blank'>Live Demo</a>
-        </article>
-
-        <article className='portfolio_container'>
-          <div className='portfolio_item-image'>
-            <img src={IMG3} alt="" />
-          </div>
-          <h3>This is a portfolio item title</h3>
-          <a href="#" className='btn'>Github</a>
-          <a href="https://dribbble.com/Alien_pixels" className='btn btn-primary' target='_blank'>Live Demo</a>
-        </article>
-
-        <article className='portfolio_container'>
-          <div className='portfolio_item-image'>
-            <img src={IMG4} alt="" />
-          </div>
-          <h3>This is a portfolio item title</h3>
-          <a href="#" className='btn'>Github</a>
-          <a href="https://dribbble.com/Alien_pixels" className='btn btn-primary' target='_blank'>Live Demo</a>
-        </article>
-
-        <article className='portfolio_container'>
-          <div className='portfolio_item-image'>
-            <img src={IMG5} alt="" />
-          </div>
-          <h3>This is a portfolio item title</h3>
-          <a href="#" className='btn'>Github</a>
-          <a href="https://dribbble.com/Alien_pixels" className='btn btn-primary' target='_blank'>Live Demo</a>
-        </article>
-
-        <article className='portfolio_container'>
-          <div className='portfolio_item-image'>
-            <img src={IMG6} alt="" />
-          </div>
-          <h3>This is a portfolio item title</h3>
-          <a href="#" className='btn'>Github</a>
-          <a href="https://dribbble.com/Alien_pixels" className='btn btn-primary' target='_blank'>Live Demo</a>
-        </article>
       </div>
     </section>
   )
