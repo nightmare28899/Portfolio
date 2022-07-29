@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
 import './portfolio.css'
-import IMG1 from '../../assets/game.jpg'
+import IMG1 from '../../assets/game-paper.jpg'
 import IMG2 from '../../assets/date-react.png'
 import IMG3 from '../../assets/portfolio3.jpg'
 import IMG4 from '../../assets/portfolio4.jpg'
@@ -14,12 +14,12 @@ export default function Portfolio() {
     {
       id: 1,
       img: IMG1,
-      title: 'Paper, Rock, Scissors',
+      title: 'Paper, Rock, Scissors, Spock and Lizard',
       page: 'https://github.com/nightmare28899/paper-game',
       description: 'A simple game of paper, rock, scissors, spock and lizard, is made it with angular 14.',
       demo: 'https://voluble-puppy-a4b8ff.netlify.app/',
     },
-    {
+    { 
       id: 2,
       img: IMG2,
       title: 'This is a portfolio item title',

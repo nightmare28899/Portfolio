@@ -12,12 +12,13 @@
 
 :root {
   --color-bg: #1f1f38;
+  /* --color-bg-variant: #2c2c6c; */
   --color-bg-variant: #2c2c6c;
-  --color-primary: #4db5ff;
+  --color-primary: #d1e15a;
   --color-primary-variant: rgba(77, 181, 255, 0.4);
   --color-white: #fff;
   --color-light: rgba(255, 255, 255, 0.6);
-
+  --color-dark: rgba(0, 0, 0, 0.6);
   --transition: all 400ms ease;
 
   --container-width-lg: 75%;
@@ -38,7 +39,20 @@ body {
   background: var(--color-bg);
   color: var(--color-white);
   line-height: 1.7;
-  background-image: url(../src/assets/bg-texture.png);
+  /* background-image: url(../src/assets/bg-texture.png); */
+  background: conic-gradient(
+    from 45deg,
+    #06024ed9 0,
+    #080a44e3 90deg,
+    #0a0a50e8 90deg,
+    #02052e 180deg,
+    #090b28 180deg,
+    #010324 270deg,
+    #06063ae3 270deg,
+    #02053ae6 360deg
+  );
+  background-size: 0.7rem 0.7rem;
+  height: 100vh;
 }
 
 /* ******************* GENERAL STYLES ******************* */

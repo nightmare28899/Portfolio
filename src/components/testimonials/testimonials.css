@@ -20,7 +20,7 @@
 }
 
 .client_review {
-  color: var(--color-light);
+  color: var(--color-white);
   font-weight: 300;
   display: block;
   width: 80%;

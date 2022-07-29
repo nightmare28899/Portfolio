@@ -25,7 +25,7 @@ export default function Contact() {
       <h2>Contact Me</h2>
 
       <div className="container contact_container">
-        <div className="contact_options">
+        {/* <div className="contact_options">
           <article className="contact_option">
             <MdOutlineEmail />
             <h4>Email</h4>
@@ -44,7 +44,7 @@ export default function Contact() {
             <h5>+52 4436397414</h5>
             <a href="https://api.whatsapp.com/send?phone=4436397414" target="_blank">Send a message</a>
           </article>
-        </div>
+        </div> */}
         {/* END OF THE CONTACT OPTIONS */}
         <form ref={form} onSubmit={sendEmail}>
           <input type="text" name="name" placeholder="Your Full Name" required />

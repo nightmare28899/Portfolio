@@ -1,6 +1,6 @@
 .container.contact_container {
-    width: 58%;
-    display: grid;
+    width: 40%;
+    /* display: grid; */
     grid-template-columns: 30% 58%;
     gap: 12%;
 }
@@ -47,23 +47,25 @@ input, textarea {
     width: 100%;
     padding: 1.2rem;
     border-radius: 0.5rem;
-    background: transparent;
+    /* background: transparent; */
     border: 2px solid var(--color-primary-variant);
     resize: none;
-    color: var(--color-white);
+    color: var(--color-dark);
 }
 
 /* ********** MEDIA QUERIES (MEDIUM DEVICES) ********** */
 @media screen and (max-width: 1024px) {
     .container.contact_container {
-        grid-template-columns: 1fr;
-        gap: 2rem;
+        /* grid-template-columns: 1fr;
+        gap: 2rem; */
+        width: var(--container-width-md);
     }
 }
 
 /* ********** MEDIA QUERIES (SMALL DEVICES) ********** */
 @media screen and (max-width: 600px) {
     .container.contact_container {
-        width: var(--container-wdth-sm);
+        width: var(--container-width-sm);
+        padding: 0 2rem 0 2rem;
     }
 }
