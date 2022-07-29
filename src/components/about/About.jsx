@@ -24,24 +24,26 @@ export default function About() {
             <article className='about_card'>
               <FaAward className='about_icon' />
               <h5>Experience</h5>
-              <small>3+ Years Working</small>
+              <small>8 months Working</small>
             </article>
 
             <article className='about_card'>
               <FiUsers className='about_icon' />
               <h5>Clients</h5>
-              <small>200+ Worldwide</small>
+              <small>2 Worldwide</small>
             </article>
 
             <article className='about_card'>
               <VscFolderLibrary className='about_icon' />
               <h5>Projects</h5>
-              <small>80+ Completed</small>
+              <small>4+ Completed</small>
             </article>
           </div>
 
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto fuga recusandae doloribus amet sit aspernatur cum sed vero, ea dicta necessitatibus fugit, itaque minima adipisci debitis veniam eveniet ratione. Recusandae!
-            Sint, porro suscipit voluptates aut reprehenderit voluptatum earum unde reiciendis adipisci deserunt eius ratione iste a
+          <p>
+            I am a junior web developer with a passion for creating beautiful, responsive websites. 
+            I have passion for learning new technologies and practice doing projects.
+            I am working hard to convert me as a full-stack web developer.
           </p>
 
           <a href="#contact" className='btn btn-primary'>Let's Talk</a>

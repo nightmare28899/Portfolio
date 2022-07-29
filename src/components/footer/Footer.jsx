@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import "./footer.css";
 import { FaFacebookF } from "react-icons/fa";
@@ -7,9 +8,9 @@ import { IoLogoTwitter } from "react-icons/io";
 export default function Footer() {
   return (
     <footer>
-      <a href="#" className="footer_logo">
+      {/* <a href="#" className="footer_logo">
         EGATOR
-      </a>
+      </a> */}
 
       <ul className="permalinks">
         <li>
@@ -35,14 +36,14 @@ export default function Footer() {
         </li>
       </ul>
 
-      <div className="footer_socials">
+      {/* <div className="footer_socials">
         <a href="https://facebook.com"><FaFacebookF /></a>
         <a href="https://instagram.com"><FiInstagram /></a>
         <a href="https://twitter.com"><IoLogoTwitter /></a>
-      </div>
+      </div> */}
 
       <div className="footer_copyright">
-        <small>&copy; EGATOR Tutorials. All rights reserved.</small>
+        <small>&copy; KLG. All rights reserved.</small>
       </div>
     </footer>
   );
