@@ -2,7 +2,7 @@
 import React from 'react'
 import './portfolio.css'
 import IMG1 from '../../assets/game.jpg'
-import IMG2 from '../../assets/portfolio2.jpg'
+import IMG2 from '../../assets/date-react.png'
 import IMG3 from '../../assets/portfolio3.jpg'
 import IMG4 from '../../assets/portfolio4.jpg'
 import IMG5 from '../../assets/portfolio5.png'
@@ -23,7 +23,8 @@ export default function Portfolio() {
       id: 2,
       img: IMG2,
       title: 'This is a portfolio item title',
-      page: 'https://github.com',
+      page: 'https://github.com/nightmare28899/React-date',
+      description: 'It is a simple website using react to create dates like veterinary clinic.',
       demo: 'https://dribbble.com/Alien_pixels',
     },
     {
