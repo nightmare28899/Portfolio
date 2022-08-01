@@ -4,8 +4,8 @@ import './portfolio.css'
 export default function Portfolio() {
 
   const IMG1 = require('../../assets/game-paper.jpg')
-  const IMG2 = require('../../assets/date-react.png')
-  const IMG3 = require('../../assets/portfolio3.jpg')
+  const IMG2 = require('../../assets/portfolio3.jpg')
+  const IMG3 = require('../../assets/date-react.png')
   const IMG4 = require('../../assets/portfolio4.jpg')
   const IMG5 = require('../../assets/portfolio5.png')
   const IMG6 = require('../../assets/portfolio6.jpg')
@@ -19,20 +19,21 @@ export default function Portfolio() {
       description: 'A simple game of paper, rock, scissors, spock and lizard, is made it with angular 14.',
       demo: 'https://voluble-puppy-a4b8ff.netlify.app/',
     },
-    { 
+    {
       id: 2,
       img: IMG2,
       title: 'This is a portfolio item title',
-      page: 'https://github.com/nightmare28899/React-date',
-      description: 'It is a simple website using react to create dates like veterinary clinic, v2 .',
-      demo: 'https://beautiful-kleicha-3bcc2a.netlify.app/',
+      page: 'https://github.com/nightmare28899/citas-react-v1',
+      description: 'It is a simple website using react to create dates like veterinary clinic, v1 .',
+      demo: 'https://confident-shockley-89972e.netlify.app/',
     },
-    {
+    { 
       id: 3,
       img: IMG3,
       title: 'This is a portfolio item title',
-      page: 'https://github.com',
-      demo: 'https://dribbble.com/Alien_pixels',
+      page: 'https://github.com/nightmare28899/React-date',
+      description: 'This is a remake from the v1 with a better design, using vite v2 .',
+      demo: 'https://beautiful-kleicha-3bcc2a.netlify.app/',
     },
     {
       id: 4,
