@@ -1,13 +1,18 @@
 import './header.css'
 import CTA from './CTA'
 import HeaderSocial from './HeaderSocials'
+import { animateScroll as scroll } from 'react-scroll'
 
 export default function Header() {
 
   const ME = require('../../assets/kev.png')  
 
+  const scrollToBottom = () => {
+    scroll.scrollToBottom();
+  };
+
   return (
-    <header>
+    <header id='/'>
       <div className="container header_container">
         <h5>Hello I'm</h5>
         <h1>Kevin López</h1>
@@ -19,7 +24,7 @@ export default function Header() {
           <img src={ME} alt="me" />
         </div>
 
-        <a href="#contact" className='scroll_down'>Scroll Down</a>
+        <div onClick={scrollToBottom} className='scroll_down'>Scroll Down</div>
       </div>
     </header>
   )

@@ -10,10 +10,10 @@ export default function Contact() {
 
   const onChange = () => {
     if (captcha.current.getValue()) {
-      console.log("The user is not a robot");
+      /* console.log("The user is not a robot"); */
       changeCaptchaValid(true);
     }
-  }
+  };
 
   const form: any = useRef();
 
@@ -21,10 +21,10 @@ export default function Contact() {
     preventDefault: () => void;
     target: { reset: () => void };
   }) => {
-    e.preventDefault();
+    e.preventDefault()
 
-    if (captcha.current?.getValue()) {
-      console.log("The user is not a robot");
+    if (captcha.current.getValue()) {
+      /* console.log("The user is not a robot"); */
       emailjs.sendForm(
         "service_y1w723w",
         "template_3dh8e2k",
@@ -35,7 +35,7 @@ export default function Contact() {
       changeCaptchaValid(true);
       e.target.reset();
     } else {
-      console.log("Please accept the captcha");
+      /* console.log("Please accept the captcha"); */
       changeCaptchaValid(false);
     }
   };
@@ -61,12 +61,16 @@ export default function Contact() {
             placeholder="Your Message"
             required
           ></textarea>
-          <ReCAPTCHA
-            ref={captcha}
-            sitekey="6LeO_TghAAAAAAxUZwXYaWSeZ3OCe6dVzXtcmXRy"
-            onChange={onChange}
-          />
-          { captchaValid === false && <div className="error-captcha ">¡Please accept the catpcha!</div> }
+          {sendEmail !== "" && (
+            <ReCAPTCHA
+              ref={captcha}
+              sitekey="6LeO_TghAAAAAAxUZwXYaWSeZ3OCe6dVzXtcmXRy"
+              onChange={onChange}
+            />
+          )}
+          {captchaValid === false && (
+            <div className="error-captcha ">¡Please accept the catpcha!</div>
+          )}
           <button type="submit" className="btn btn-primary">
             Send Message
           </button>
