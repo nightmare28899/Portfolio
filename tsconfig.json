@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": false,
+    "module": "es6",
+    "target": "es5",
+    "allowJs": true,
+    "pretty": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+  },
+  "include": ["./lib/**/*"],
+  "exclude": ["node_modules"],
+  "files": ["src/index.tsx"]
+}

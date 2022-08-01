@@ -53,6 +53,14 @@ input, textarea {
     color: var(--color-dark);
 }
 
+.error-captcha {
+    color: var(--color-white);
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    text-align: center;
+    background: #ff5252;
+}
+
 /* ********** MEDIA QUERIES (MEDIUM DEVICES) ********** */
 @media screen and (max-width: 1024px) {
     .container.contact_container {
