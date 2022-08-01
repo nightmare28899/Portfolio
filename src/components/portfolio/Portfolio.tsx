@@ -4,8 +4,8 @@ import './portfolio.css'
 export default function Portfolio() {
 
   const IMG1 = require('../../assets/game-paper.jpg')
-  const IMG2 = require('../../assets/portfolio3.jpg')
-  const IMG3 = require('../../assets/date-react.png')
+  const IMG2 = require('../../assets/veterinary-v1.jpg')
+  const IMG3 = require('../../assets/veterinary-v2.jpg')
   const IMG4 = require('../../assets/portfolio4.jpg')
   const IMG5 = require('../../assets/portfolio5.png')
   const IMG6 = require('../../assets/portfolio6.jpg')
@@ -22,7 +22,7 @@ export default function Portfolio() {
     {
       id: 2,
       img: IMG2,
-      title: 'This is a portfolio item title',
+      title: 'It is a simple webSite to create, notes for clients and his pets like veterinary.',
       page: 'https://github.com/nightmare28899/citas-react-v1',
       description: 'It is a simple website using react to create dates like veterinary clinic, v1 .',
       demo: 'https://confident-shockley-89972e.netlify.app/',
@@ -30,9 +30,9 @@ export default function Portfolio() {
     { 
       id: 3,
       img: IMG3,
-      title: 'This is a portfolio item title',
+      title: 'Interactive webSite to create, notes for clients and his pets.',
       page: 'https://github.com/nightmare28899/React-date',
-      description: 'This is a remake from the v1 with a better design, using vite v2 .',
+      description: 'This is a remake from the v1 with a better design, using vite and you can edit the note v2 .',
       demo: 'https://beautiful-kleicha-3bcc2a.netlify.app/',
     },
     {
