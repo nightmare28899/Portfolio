@@ -5,7 +5,7 @@ import { animateScroll as scroll } from 'react-scroll'
 
 export default function Header() {
 
-  const ME = require('../../assets/kev.png')  
+  const ME = require('../assets/img/kev.png') 
 
   const scrollToBottom = () => {
     scroll.scrollToBottom();

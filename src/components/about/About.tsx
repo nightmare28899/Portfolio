@@ -8,7 +8,7 @@ import 'animate.css';
 
 export default function About() {
 
-  const ME = require('../../assets/me-about-kev.png')
+  const ME = require('../assets/img/me-about-kev.png')
 
   return (
     <section id="about">

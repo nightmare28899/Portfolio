@@ -7,12 +7,10 @@ import { FaCss3Alt } from "react-icons/fa";
 import 'animate.css';
 
 export default function Portfolio() {
-  const IMG1 = require("../../assets/game-paper.jpg");
-  const IMG2 = require("../../assets/veterinary-v1.jpg");
-  const IMG3 = require("../../assets/veterinary-v2.jpg");
-  const IMG4 = require("../../assets/presupuestos.jpg");
-  const IMG5 = require("../../assets/portfolio5.png");
-  const IMG6 = require("../../assets/portfolio6.jpg");
+  const IMG1 = require("../assets/img/game-paper.jpg");
+  const IMG2 = require("../assets/img/veterinary-v1.jpg");
+  const IMG3 = require("../assets/img/veterinary-v2.jpg");
+  const IMG4 = require("../assets/img/presupuestos.jpg");
 
   const portfolio = [
     {

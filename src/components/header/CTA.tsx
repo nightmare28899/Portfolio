@@ -1,7 +1,7 @@
 
 export default function CTA() {
 
-    const CV = require('../../assets/cv.pdf')
+    const CV = require('../assets/static/CV_KevLG.pdf');
     
     return (
         <div className='cta'>
