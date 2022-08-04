@@ -14,13 +14,13 @@ export default function Header() {
   return (
     <header id='/'>
       <div className="container header_container">
-        <h5>Hello I'm</h5>
-        <h1>Kevin López</h1>
-        <h5 className="text-light">I'm a Web Developer / Front-end developer</h5>
+        <h5 className='animate__animated animate__fadeIn'>Hello I'm</h5>
+        <h1 className='animate__animated animate__fadeIn'>Kevin López</h1>
+        <h5 className="text-light animate__animated animate__fadeIn">I'm a Web Developer / Front-end developer</h5>
         <CTA />
         <HeaderSocial />
         <br />
-        <div className="me">
+        <div className="me animate__animated animate__fadeInUp">
           <img src={ME} alt="me" />
         </div>
 

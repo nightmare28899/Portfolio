@@ -83,12 +83,12 @@ export default function experience() {
       <h2>My Experience</h2>
 
       <div className="container experience_container">
-        <div className="experience_frontend">
+        <div className="experience_frontend animate__animated animate__backInLeft">
           <h3>Frontend Development</h3>
           <div className="experience_content">{listItemsFronted}</div>
         </div>
         {/* END OF FRONTEND */}
-        <div className="experience_backend">
+        <div className="experience_backend animate__animated animate__backInRight">
           <h3>Backend Development</h3>
           <div className="experience_content">{listItemsBackend}</div>
         </div>

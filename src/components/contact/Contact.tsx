@@ -42,10 +42,10 @@ export default function Contact() {
 
   return (
     <section id="contact">
-      <h5>Get In Touch</h5>
-      <h2>Contact Me</h2>
+      <h5 className="animate__animated animate__fadeInUp">Get In Touch</h5>
+      <h2 className="animate__animated animate__fadeInUp">Contact Me</h2>
 
-      <div className="container contact_container">
+      <div className="container contact_container animate__animated animate__fadeInUp">
         {/* END OF THE CONTACT OPTIONS */}
         <form ref={form} onSubmit={sendEmail}>
           <input
