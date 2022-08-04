@@ -1,7 +1,7 @@
 
 export default function CTA() {
 
-    const CV = require('../assets/static/CV_KevLG.pdf');
+    const CV = 'https://firebasestorage.googleapis.com/v0/b/portfolio-15cc6.appspot.com/o/CV_KevLG.pdf?alt=media&token=ecddccba-9d8a-4540-b685-9c5ab2864d61';
     
     return (
         <div className='cta'>

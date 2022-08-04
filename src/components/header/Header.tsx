@@ -5,7 +5,7 @@ import { animateScroll as scroll } from 'react-scroll'
 
 export default function Header() {
 
-  const ME = require('../assets/img/kev.png') 
+  const ME = 'https://firebasestorage.googleapis.com/v0/b/portfolio-15cc6.appspot.com/o/img%2Fkev.png?alt=media&token=224557e3-3c0c-43de-bd70-bc09faf01305'
 
   const scrollToBottom = () => {
     scroll.scrollToBottom();

@@ -7,10 +7,10 @@ import { FaCss3Alt } from "react-icons/fa";
 import 'animate.css';
 
 export default function Portfolio() {
-  const IMG1 = require("../assets/img/game-paper.jpg");
-  const IMG2 = require("../assets/img/veterinary-v1.jpg");
-  const IMG3 = require("../assets/img/veterinary-v2.jpg");
-  const IMG4 = require("../assets/img/presupuestos.jpg");
+  const IMG1 = 'https://firebasestorage.googleapis.com/v0/b/portfolio-15cc6.appspot.com/o/img%2Fgame-paper.jpg?alt=media&token=84bf3307-487d-49ab-9684-29a6f6b74748';
+  const IMG2 = 'https://firebasestorage.googleapis.com/v0/b/portfolio-15cc6.appspot.com/o/img%2Fveterinary-v1.jpg?alt=media&token=cdd680c8-fcba-4a55-90ae-7f67930a725d';
+  const IMG3 = 'https://firebasestorage.googleapis.com/v0/b/portfolio-15cc6.appspot.com/o/img%2Fveterinary-v2.jpg?alt=media&token=733b3f39-059e-4ffc-8e7b-a9d5cfabb9bf';
+  const IMG4 = 'https://firebasestorage.googleapis.com/v0/b/portfolio-15cc6.appspot.com/o/img%2Fpresupuestos.jpg?alt=media&token=45f184ec-9718-477d-bf1e-02cdf501a057';
 
   const portfolio = [
     {

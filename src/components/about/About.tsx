@@ -8,7 +8,7 @@ import 'animate.css';
 
 export default function About() {
 
-  const ME = require('../assets/img/me-about-kev.png')
+  const ME = 'https://firebasestorage.googleapis.com/v0/b/portfolio-15cc6.appspot.com/o/img%2Fme-about-kev.png?alt=media&token=e2737b63-853b-44ea-9c43-52b173bffd23'
 
   return (
     <section id="about">

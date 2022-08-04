@@ -43,10 +43,14 @@ const config = {
         type: "asset",
         use: "file-loader",
       },
-
       // Add your rules for custom modules here
       // Learn more about loaders from https://webpack.js.org/loaders/
     ],
+  },
+  performance: {
+    hints: false,
+    maxEntrypointSize: 512000,
+    maxAssetSize: 512000,
   },
   resolve: {
     extensions: [".tsx", ".ts", ".jsx", ".js", "..."],
@@ -54,6 +58,7 @@ const config = {
 };
 
 module.exports = () => {
+  
   if (isProduction) {
     config.mode = "production";
 

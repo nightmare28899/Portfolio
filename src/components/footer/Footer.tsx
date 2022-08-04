@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import "./footer.css";
+import { Link } from 'react-scroll'
 
 export default function Footer() {
   return (
@@ -7,19 +8,19 @@ export default function Footer() {
 
       <ul className="permalinks">
         <li>
-          <a href="#">Home</a>
+        <Link to="/" spy={true} smooth={true} duration={100} offset={-50} delay={500}>Home</Link>
         </li>
         <li>
-          <a href="#about">About</a>
+          <Link to="about" spy={true} smooth={true} duration={100} offset={-50} delay={500}>About</Link>
         </li>
         <li>
-          <a href="#experience">Experience</a>
+          <Link to="experience" spy={true} smooth={true} duration={100} offset={-50} delay={500}>Experience</Link>
         </li>
         <li>
-          <a href="#portfolio">Portfolio</a>
+          <Link to="portfolio" spy={true} smooth={true} duration={100} offset={-50} delay={500}>Portfolio</Link>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+          <Link to="contact" spy={true} smooth={true} duration={100} offset={-50} delay={500}>Contact</Link>
         </li>
       </ul>
 
