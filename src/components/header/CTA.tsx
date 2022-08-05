@@ -1,3 +1,4 @@
+import { Link } from 'react-scroll'
 
 export default function CTA() {
 
@@ -6,7 +7,7 @@ export default function CTA() {
     return (
         <div className='cta'>
             <a href={CV} download className='btn animate__animated animate__backInLeft'>Download CV</a>
-            <a href="#contact" className='btn btn-primary animate__animated animate__backInRight'>Let's Talk</a>
+            <Link to="contact" className='btn btn-primary animate__animated animate__backInRight'>Let's Talk</Link>
         </div>
     )
 }

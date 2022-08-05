@@ -4600,7 +4600,6 @@ body {
   background: var(--color-bg);
   color: var(--color-white);
   line-height: 1.7;
-  /* background-image: url(../src/assets/bg-texture.png); */
   background: conic-gradient(
     from 45deg,
     #06024ed9 0,

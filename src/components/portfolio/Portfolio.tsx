@@ -20,7 +20,7 @@ export default function Portfolio() {
       page: "https://github.com/nightmare28899/paper-game",
       description:
         "A simple game of paper, rock, scissors, spock and lizard, is made it with angular 14.",
-      demo: "https://voluble-puppy-a4b8ff.netlify.app/",
+      demo: "https://extraordinary-churros-8866f3.netlify.app/",
       icon: <SiTypescript fontSize="2.6em" />,
       icon2: <SiAngular fontSize="2.6em" />,
       icon3: <SiBootstrap fontSize="2.6em" />,
