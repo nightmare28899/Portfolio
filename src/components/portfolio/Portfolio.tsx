@@ -20,7 +20,7 @@ export default function Portfolio() {
       page: "https://github.com/nightmare28899/paper-game",
       description:
         "A simple game of paper, rock, scissors, spock and lizard, is made it with angular 14.",
-      demo: "https://extraordinary-churros-8866f3.netlify.app/",
+      demo: "https://paper-game.kevinlg.dev/",
       icon: <SiTypescript fontSize="2.6em" />,
       icon2: <SiAngular fontSize="2.6em" />,
       icon3: <SiBootstrap fontSize="2.6em" />,
@@ -35,7 +35,7 @@ export default function Portfolio() {
       page: "https://github.com/nightmare28899/citas-react-v1",
       description:
         "It is a simple website using react to create dates like veterinary clinic, v1 .",
-      demo: "https://confident-shockley-89972e.netlify.app/",
+      demo: "https://patients-crud.kevinlg.dev/",
       icon: <SiJavascript fontSize="2.6em" />,
       icon2: <SiReact fontSize="2.6em" />,
       icon3: <GiSkeleton fontSize="2.6em" />,
@@ -48,7 +48,7 @@ export default function Portfolio() {
       page: "https://github.com/nightmare28899/React-date",
       description:
         "This is a remake from the v1 with a better design, using vite and you can edit the note v2 .",
-      demo: "https://beautiful-kleicha-3bcc2a.netlify.app/",
+      demo: "https://veterinary-crud.kevinlg.dev/",
       icon: <SiTypescript fontSize="2.6em" />,
       icon2: <SiReact fontSize="2.6em" />,
       icon3: <SiVite fontSize="2.6em" />,
@@ -61,7 +61,7 @@ export default function Portfolio() {
       title:
         "It is a simple webSite to create, a budget to have a better life.",
       page: "https://github.com",
-      demo: "https://hopeful-archimedes-9328ea.netlify.app/",
+      demo: "https://budget-webapp.kevinlg.dev/",
       icon: <SiJavascript fontSize="2.6em" />,
       icon2: <SiReact fontSize="2.6em" />,
       icon3: <GiSkeleton fontSize="2.6em" />,
