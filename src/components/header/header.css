@@ -58,6 +58,11 @@ header {
     font-weight: 300;
     font-size: 0.9rem;
     cursor: pointer;
+    color: var(--color-primary);
+}
+
+.scroll_down:hover {
+    color: var(--color-white);
 }
 
 /* **************  MEDIA QUERIES (MEDIUM DEVICES)  ************** */

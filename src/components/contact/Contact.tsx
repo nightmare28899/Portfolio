@@ -2,15 +2,42 @@ import "./contact.css";
 import { useRef, useState } from "react";
 import emailjs from "emailjs-com";
 import ReCAPTCHA from "react-google-recaptcha";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function Contact() {
   const [captchaValid, changeCaptchaValid] = useState(true);
 
   const captcha = useRef<any>(null);
 
+  const notify = () => toast.success(
+    '¡Successfully Sent!', {
+      position: "top-center",
+      autoClose: 2500,
+      hideProgressBar: true,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+    }
+  );
+
+  const notifyError = () => toast.error(
+    '¡Please Accept The Catpcha!', {
+      position: "top-center",
+      autoClose: 2500,
+      hideProgressBar: true,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+    }
+  );
+
   const onChange = () => {
     if (captcha.current.getValue()) {
-      /* console.log("The user is not a robot"); */
       changeCaptchaValid(true);
     }
   };
@@ -21,10 +48,9 @@ export default function Contact() {
     preventDefault: () => void;
     target: { reset: () => void };
   }) => {
-    e.preventDefault()
+    e.preventDefault();
 
     if (captcha.current.getValue()) {
-      /* console.log("The user is not a robot"); */
       emailjs.sendForm(
         "service_y1w723w",
         "template_3dh8e2k",
@@ -32,11 +58,12 @@ export default function Contact() {
         "y6-WHC_z5mMb9v8IO"
       );
 
-      changeCaptchaValid(true);
+      notify();
       e.target.reset();
+      captchaValid && captcha.current.reset();
     } else {
-      /* console.log("Please accept the captcha"); */
       changeCaptchaValid(false);
+      notifyError();
     }
   };
 
@@ -68,13 +95,25 @@ export default function Contact() {
               onChange={onChange}
             />
           )}
-          {captchaValid === false && (
-            <div className="error-captcha ">¡Please accept the catpcha!</div>
-          )}
           <button type="submit" className="btn btn-primary">
             Send Message
           </button>
         </form>
+      </div>
+      <div>
+        <ToastContainer
+          position="top-center"
+          autoClose={3000}
+          hideProgressBar
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="colored"
+        />
+        
       </div>
     </section>
   );

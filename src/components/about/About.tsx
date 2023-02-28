@@ -36,14 +36,14 @@ export default function About() {
               <article className="about_card animate__animated animate__fadeIn">
                 <FaAward className="about_icon" />
                 <h5>Experience</h5>
-                <small>8 months Working</small>
+                <small>1 Year Working</small>
               </article>
             </Link>
 
             <article className="about_card animate__animated animate__fadeIn">
               <FiUsers className="about_icon" />
               <h5>Clients</h5>
-              <small>2 Worldwide</small>
+              <small>4 Worldwide</small>
             </article>
 
             <Link
@@ -57,7 +57,7 @@ export default function About() {
               <article className="about_card animate__animated animate__fadeIn">
                 <VscFolderLibrary className="about_icon" />
                 <h5>Projects</h5>
-                <small>4+ Completed</small>
+                <small>6+ Completed</small>
               </article>
             </Link>
           </div>

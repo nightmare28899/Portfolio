@@ -84,13 +84,19 @@ export default function Portfolio() {
       icon4: <FaCss3Alt fontSize="2.6em" />,
 
     },
-    /* {
+    {
       id: 6,
       img: IMG6,
-      title: "This is a portfolio item title",
-      page: "https://github.com",
-      demo: "https://dribbble.com/Alien_pixels",
-    }, */
+      title: "This is a callback to the Rick and Morty API, using Angular 14.",
+      page: "https://github.com/nightmare28899/angular-API",
+      description: "It's an example of how to use the Rick and Morty API, using Angular 14.",
+      demo: "https://rick-morty-api-angular.kevinlg.dev",
+      icon: <SiTypescript fontSize="2.6em" />,
+      icon2: <SiAngular fontSize="2.6em" />,
+      icon3: <SiBootstrap fontSize="2.6em" />,
+      icon4: <SiHtml5 fontSize="2.6em" />,
+      icon5: <FaCss3Alt fontSize="2.6em" />,
+    },
   ];
 
   const portfolioList = portfolio.map((item, index) => (
@@ -129,7 +135,7 @@ export default function Portfolio() {
 
   return (
     <section id="portfolio">
-      <h5>My Recent Work</h5>
+      <h5>Some Personal Projects</h5>
       <h2>Portfolio</h2>
       <div className="container portfolio_container">{portfolioList}</div>
     </section>

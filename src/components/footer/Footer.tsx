@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer>
 
-      <ul className="permalinks">
+      {/* <ul className="permalinks">
         <li>
         <Link to="/" spy={true} smooth={true} duration={100} offset={-50} delay={500}>Home</Link>
         </li>
@@ -22,7 +22,7 @@ export default function Footer() {
         <li>
           <Link to="contact" spy={true} smooth={true} duration={100} offset={-50} delay={500}>Contact</Link>
         </li>
-      </ul>
+      </ul> */}
 
       <div className="footer_copyright">
         <small>&copy; KLG. All rights reserved.</small>

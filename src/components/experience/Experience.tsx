@@ -1,4 +1,3 @@
-import React from "react";
 import "./experience.css";
 import { BsPatchCheckFill } from "react-icons/bs";
 
@@ -18,7 +17,7 @@ export default function experience() {
     },
     {
       title: "React",
-      level: "Basic",
+      level: "Intermediate",
     },
     {
       title: "Angular",
@@ -51,7 +50,7 @@ export default function experience() {
     },
     {
       title: "MySQL",
-      level: "Basic",
+      level: "Intermediate",
     },
     {
       title: "PostgreSQL",
