@@ -10,8 +10,8 @@ export default function Contact() {
 
   const captcha = useRef<any>(null);
 
-  const notify = () => toast.success(
-    '¡Successfully Sent!', {
+  const notify = () =>
+    toast.success("¡Successfully Sent!", {
       position: "top-center",
       autoClose: 2500,
       hideProgressBar: true,
@@ -20,11 +20,10 @@ export default function Contact() {
       draggable: true,
       progress: undefined,
       theme: "colored",
-    }
-  );
+    });
 
-  const notifyError = () => toast.error(
-    '¡Please Accept The Catpcha!', {
+  const notifyError = () =>
+    toast.error("¡Please Accept The Catpcha!", {
       position: "top-center",
       autoClose: 2500,
       hideProgressBar: true,
@@ -33,8 +32,7 @@ export default function Contact() {
       draggable: true,
       progress: undefined,
       theme: "colored",
-    }
-  );
+    });
 
   const onChange = () => {
     if (captcha.current.getValue()) {
@@ -100,6 +98,7 @@ export default function Contact() {
           </button>
         </form>
       </div>
+
       <div>
         <ToastContainer
           position="top-center"
@@ -113,7 +112,6 @@ export default function Contact() {
           pauseOnHover
           theme="colored"
         />
-        
       </div>
     </section>
   );

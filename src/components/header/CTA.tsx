@@ -6,7 +6,7 @@ export default function CTA() {
     
     return (
         <div className='cta'>
-            <a href={CV} download className='btn animate__animated animate__backInLeft' target="_blank">Download CV</a>
+            <a href={CV} download className='btn animate__animated animate__backInLeft' rel='noreferrer' target="_blank">Download CV</a>
             <Link to="contact" className='btn btn-primary animate__animated animate__backInRight'>Let's Talk</Link>
         </div>
     )

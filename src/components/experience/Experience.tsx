@@ -27,6 +27,14 @@ export default function experience() {
       title: "TailwindCSS",
       level: "Intermediate",
     },
+    {
+      title: "Bootstrap",
+      level: "Intermediate",
+    },
+    {
+      title: "SASS",
+      level: "Intermediate",
+    }
   ];
 
   const listItemsFronted = experiencesFronted.map((experience, index) => (
@@ -64,6 +72,14 @@ export default function experience() {
       title: "PHP",
       level: "Intermediate",
     },
+    {
+      title: "Spring Boot",
+      level: "Basic",
+    },
+    {
+      title: "Django",
+      level: "Basic",
+    }
   ];
 
   const listItemsBackend = experiencesBackend.map((experience, index) => (
