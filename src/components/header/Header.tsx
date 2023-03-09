@@ -25,7 +25,7 @@ export default function Header() {
         <HeaderSocial />
         <br />
         <div className="me animate__animated animate__fadeInUp">
-          <img src={ME} alt="me" />
+          <img src={ME} alt="me" style={{ height: "100%" }} />
         </div>
 
         <IconContext.Provider value={{ size: "30px" }}>
