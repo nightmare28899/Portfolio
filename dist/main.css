@@ -5662,3 +5662,14 @@ img {
   }
 }
 
+@media only screen and (max-width: 680px) and (min-width: 380px) {
+  img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    height: 80%;
+    padding-top: 1rem;
+  }
+}
+
