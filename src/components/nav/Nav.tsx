@@ -16,7 +16,7 @@ export default function Nav() {
       <Link activeClass="active" to="/" spy={true} smooth={true} duration={100} offset={-50} delay={500}><FaHome /></Link>
       <Link activeClass="active" to="about" spy={true} smooth={true} duration={100} offset={-50} delay={500}><FaUserGraduate /></Link>
       <Link activeClass="active" to="experience" spy={true} smooth={true} offset={-50} duration={100} delay={500}><FaBook /></Link>
-      <Link activeClass="active" to="services" spy={true} smooth={true} offset={-50} duration={100} delay={500}><IoMdBookmarks /></Link>
+      {/* <Link activeClass="active" to="services" spy={true} smooth={true} offset={-50} duration={100} delay={500}><IoMdBookmarks /></Link> */}
       <Link activeClass="active" to="portfolio" spy={true} smooth={true} duration={100} offset={-50} delay={500}><MdHomeRepairService /></Link>
       <Link activeClass="active" to="contact" spy={true} smooth={true} offset={-50} duration={100} delay={500}><BsFillChatDotsFill /></Link>
     </nav>
