@@ -77,7 +77,7 @@ export default function experience() {
       level: "Basic",
     },
     {
-      title: "Django",
+      title: "Docker",
       level: "Basic",
     }
   ];
