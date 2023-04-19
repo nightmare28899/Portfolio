@@ -63,7 +63,7 @@ export default function About() {
           </div>
 
           <p className="animate__animated animate__backInRight">
-            I am a junior web developer with a passion for creating beautiful
+            I am front-end developer with a passion for creating beautiful
             responsive websites. I have passion for learning new technologies
             and practice doing projects; I am working hard to convert me as a
             full-stack web developer

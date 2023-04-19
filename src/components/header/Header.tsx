@@ -19,7 +19,7 @@ export default function Header() {
         <h5 className="animate__animated animate__fadeIn">Hello I'm</h5>
         <h1 className="animate__animated animate__fadeIn">Kevin López</h1>
         <h5 className="text-light animate__animated animate__fadeIn">
-          I'm a Web Developer / Junior developer
+          I'm a Web Developer / Front-end and Back-end
         </h5>
         <CTA />
         <HeaderSocial />
