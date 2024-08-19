@@ -1,39 +1,49 @@
 import "./experience.css";
 import { BsPatchCheckFill } from "react-icons/bs";
+import useTranslation from "../../hooks/useTranslation";
+import {useSelector} from "react-redux";
+import {useEffect} from "react";
 
-export default function experience() {
+export default function Experience() {
+  const { translate, setLanguage } = useTranslation();
+  const translateState = useSelector((state: any) => state.changeLanguage);
+
+    useEffect(() => {
+        setLanguage(translateState ? 'es' : 'en');
+    }, [setLanguage, translateState]);
+
   const experiencesFronted = [
     {
       title: "HTML",
-      level: "Experienced",
+      level: translate('experienced'),
     },
     {
       title: "CSS",
-      level: "Intermediate",
+      level: translate('intermediate'),
     },
     {
       title: "JavaScript",
-      level: "Intermediate",
+      level: translate('intermediate'),
     },
     {
       title: "React",
-      level: "Intermediate",
+      level: translate('intermediate'),
     },
     {
       title: "Angular",
-      level: "Intermediate",
+      level: translate('intermediate'),
     },
     {
       title: "TailwindCSS",
-      level: "Intermediate",
+      level: translate('intermediate'),
     },
     {
       title: "Bootstrap",
-      level: "Intermediate",
+      level: translate('experienced'),
     },
     {
       title: "SASS",
-      level: "Intermediate",
+      level: translate('intermediate'),
     }
   ];
 
@@ -50,35 +60,35 @@ export default function experience() {
   const experiencesBackend = [
     {
       title: "NodeJS",
-      level: "Basic",
+      level: translate('basic'),
     },
     {
       title: "ExpressJS",
-      level: "Basic",
+      level: translate('basic'),
     },
     {
       title: "MySQL",
-      level: "Intermediate",
+      level: translate('Intermediate'),
     },
     {
       title: "PostgreSQL",
-      level: "Basic",
+      level: translate('Intermediate'),
     },
     {
       title: "Laravel",
-      level: "Intermediate",
+      level: translate('Intermediate'),
     },
     {
       title: "PHP",
-      level: "Intermediate",
+      level: translate('Intermediate'),
     },
     {
       title: "Spring Boot",
-      level: "Basic",
+      level: translate('basic'),
     },
     {
       title: "Docker",
-      level: "Basic",
+      level: translate('basic'),
     }
   ];
 
@@ -94,17 +104,16 @@ export default function experience() {
 
   return (
     <section id="experience">
-      <h5>What Skills I Have</h5>
-      <h2>My Experience</h2>
+      <h5>{translate('whatSkills')}</h5>
+      <h2>{translate('myExperience')}</h2>
 
       <div className="container experience_container">
         <div className="experience_frontend animate__animated animate__backInLeft">
-          <h3>Frontend Development</h3>
+          <h3>{translate('frontendDevelopment')}</h3>
           <div className="experience_content">{listItemsFronted}</div>
         </div>
-        {/* END OF FRONTEND */}
         <div className="experience_backend animate__animated animate__backInRight">
-          <h3>Backend Development</h3>
+          <h3>{translate('backendDevelopment')}</h3>
           <div className="experience_content">{listItemsBackend}</div>
         </div>
       </div>

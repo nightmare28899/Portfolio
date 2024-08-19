@@ -1,12 +1,23 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import "./footer.css";
-import { Link } from 'react-scroll'
+import useTranslation from "../../hooks/useTranslation";
+
+import {useSelector} from "react-redux";
+import {useEffect} from "react";
+
+import {Link} from 'react-scroll'
 
 export default function Footer() {
-  return (
-    <footer>
+    const {translate, setLanguage} = useTranslation();
+    const translateState = useSelector((state: any) => state.changeLanguage);
 
-      {/* <ul className="permalinks">
+    useEffect(() => {
+        setLanguage(translateState ? 'es' : 'en');
+    }, [setLanguage, translateState]);
+
+    return (
+        <footer>
+
+            {/* <ul className="permalinks">
         <li>
         <Link to="/" spy={true} smooth={true} duration={100} offset={-50} delay={500}>Home</Link>
         </li>
@@ -24,9 +35,9 @@ export default function Footer() {
         </li>
       </ul> */}
 
-      <div className="footer_copyright">
-        <small>&copy; KLG. All rights reserved.</small>
-      </div>
-    </footer>
-  );
+            <div className="footer_copyright">
+                <small>&copy; {translate('allRightsReserved')} </small>
+            </div>
+        </footer>
+    );
 }

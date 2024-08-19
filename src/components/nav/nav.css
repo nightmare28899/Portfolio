@@ -1,7 +1,6 @@
 nav {
     background: rgba(0,0,0,0.3);
     width: max-content;
-    display: block;
     padding: 0.7rem 1.7rem;
     z-index: 2;
     position: fixed;
@@ -14,7 +13,7 @@ nav {
     background-filter: blur(15px);
 }
 
-nav a {
+nav a, .btn-inactive {
     background: transparent;
     padding: 0.9rem;
     border-radius: 50%;
@@ -23,7 +22,7 @@ nav a {
     font-size: 1.1rem;
 }
 
-nav a:hover {
+nav a:hover, .btn-inactive:hover {
     background: rgba(0,0,0,0.3);
 }
 
@@ -31,3 +30,15 @@ nav a.active {
     background: var(--color-primary);
     color: var(--color-bg);
 }
+
+.btn-active {
+    background: var(--color-primary);
+    color: var(--color-bg);
+    border-radius: 50%;
+    padding: 0.9rem;
+    display: flex;
+    font-size: 1.1rem;
+}
+
+
+

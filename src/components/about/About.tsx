@@ -1,83 +1,89 @@
-/* eslint-disable jsx-a11y/img-redundant-alt */
-import React from "react";
-import "./about.css";
-import { FaAward } from "react-icons/fa";
-import { FiUsers } from "react-icons/fi";
-import { VscFolderLibrary } from "react-icons/vsc";
-import "animate.css";
-import { Link } from "react-scroll";
+import React, {useEffect} from 'react';
+import 'animate.css';
+import {Link} from 'react-scroll';
+import {FaAward} from 'react-icons/fa';
+import {FiUsers} from 'react-icons/fi';
+import {VscFolderLibrary} from 'react-icons/vsc';
+
+import useTranslation from '../../hooks/useTranslation';
+
+import './about.css';
+import {useSelector} from "react-redux";
 
 export default function About() {
-  const ME =
-    "https://firebasestorage.googleapis.com/v0/b/portfolio-15cc6.appspot.com/o/img%2Fme-about-kev.png?alt=media&token=e2737b63-853b-44ea-9c43-52b173bffd23";
+    const ME =
+        "https://firebasestorage.googleapis.com/v0/b/portfolio-15cc6.appspot.com/o/img%2Fme-about-kev.png?alt=media&token=e2737b63-853b-44ea-9c43-52b173bffd23";
+    const {translate, setLanguage} = useTranslation();
+    const translateState = useSelector((state: any) => state.changeLanguage);
 
-  return (
-    <section id="about">
-      <h5>Get To Know</h5>
-      <h2>About Me</h2>
+    useEffect(() => {
+        setLanguage(translateState ? 'es' : 'en');
+    }, [setLanguage, translateState]);
 
-      <div className="container about_container">
-        <div className="about_me animate__animated animate__backInLeft">
-          <div className="about_me-image">
-            <img src={ME} alt="About Image" />
-          </div>
-        </div>
+    return (
+        <section id="about">
+            <h5>{translate('getToKnow')}</h5>
+            <h2>{translate('aboutMe')}</h2>
 
-        <div className="about_content">
-          <div className="about_cards">
-            <Link
-              to="experience"
-              spy={true}
-              smooth={true}
-              duration={100}
-              offset={-50}
-              delay={500}
-            >
-              <article className="about_card animate__animated animate__fadeIn">
-                <FaAward className="about_icon" />
-                <h5>Experience</h5>
-                <small>2 Year Working</small>
-              </article>
-            </Link>
+            <div className="container about_container">
+                <div className="about_me animate__animated animate__backInLeft">
+                    <div className="about_me-image">
+                        <img src={ME} alt="About Image"/>
+                    </div>
+                </div>
 
-            <article className="about_card animate__animated animate__fadeIn">
-              <FiUsers className="about_icon" />
-              <h5>Clients</h5>
-              <small>4 Worldwide</small>
-            </article>
+                <div className="about_content">
+                    <div className="about_cards">
+                        <Link
+                            to="experience"
+                            spy={true}
+                            smooth={true}
+                            duration={100}
+                            offset={-50}
+                            delay={500}
+                        >
+                            <article className="about_card animate__animated animate__fadeIn">
+                                <FaAward className="about_icon"/>
+                                <h5>{translate('experience')}</h5>
+                                <small>{translate('howLong')}</small>
+                            </article>
+                        </Link>
 
-            <Link
-              to="portfolio"
-              spy={true}
-              smooth={true}
-              duration={100}
-              offset={-50}
-              delay={500}
-            >
-              <article className="about_card animate__animated animate__fadeIn">
-                <VscFolderLibrary className="about_icon" />
-                <h5>Projects</h5>
-                <small>6+ Completed</small>
-              </article>
-            </Link>
-          </div>
+                        <article className="about_card animate__animated animate__fadeIn">
+                            <FiUsers className="about_icon"/>
+                            <h5>{translate('companies')}</h5>
+                            <small>{translate('numberCompanies')}</small>
+                        </article>
 
-          <p className="animate__animated animate__backInRight">
-            I am front-end developer with a passion for creating beautiful
-            responsive websites. I have passion for learning new technologies
-            and practice doing projects; I am working hard to convert me as a
-            full-stack web developer
-          </p>
+                        <Link
+                            to="portfolio"
+                            spy={true}
+                            smooth={true}
+                            duration={100}
+                            offset={-50}
+                            delay={500}
+                        >
+                            <article className="about_card animate__animated animate__fadeIn">
+                                <VscFolderLibrary className="about_icon"/>
+                                <h5>{translate('projects')}</h5>
+                                <small>{translate('numberProjects')}</small>
+                            </article>
+                        </Link>
+                    </div>
 
-          <Link
-            to="contact"
-            spy={true} smooth={true} duration={100} offset={-50} delay={500}
-            className="btn btn-primary animate__animated animate__fadeIn"
-          >
-            Let's Talk
-          </Link>
-        </div>
-      </div>
-    </section>
-  );
+                    <p className="animate__animated animate__backInRight">
+                        {translate('aboutMeDescription')}
+                    </p>
+
+                    <Link
+                        to="contact"
+                        spy={true} smooth={true} duration={100} offset={-50} delay={500}
+                        className="btn btn-primary animate__animated animate__fadeIn"
+                    >
+                        {translate('talkMe')}
+                    </Link>
+                </div>
+            </div>
+        </section>
+    );
 }
