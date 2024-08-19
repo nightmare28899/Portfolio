@@ -68,19 +68,19 @@ export default function Experience() {
     },
     {
       title: "MySQL",
-      level: translate('Intermediate'),
+      level: translate('intermediate'),
     },
     {
       title: "PostgreSQL",
-      level: translate('Intermediate'),
+      level: translate('intermediate'),
     },
     {
       title: "Laravel",
-      level: translate('Intermediate'),
+      level: translate('intermediate'),
     },
     {
       title: "PHP",
-      level: translate('Intermediate'),
+      level: translate('intermediate'),
     },
     {
       title: "Spring Boot",
