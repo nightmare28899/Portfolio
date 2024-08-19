@@ -36,7 +36,7 @@ export default function About() {
               <article className="about_card animate__animated animate__fadeIn">
                 <FaAward className="about_icon" />
                 <h5>Experience</h5>
-                <small>1 Year 8 Months Working</small>
+                <small>2 Year Working</small>
               </article>
             </Link>
 

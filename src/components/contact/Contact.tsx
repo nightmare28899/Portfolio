@@ -50,11 +50,11 @@ export default function Contact() {
 
     if (captcha.current.getValue()) {
       emailjs.sendForm(
-        "service_y1w723w",
-        "template_3dh8e2k",
-        form.current!,
-        "y6-WHC_z5mMb9v8IO"
-      );
+          "service_y1w723w",
+          "template_3dh8e2k",
+          form.current!,
+          "y6-WHC_z5mMb9v8IO"
+      ).then();
 
       notify();
       e.target.reset();
