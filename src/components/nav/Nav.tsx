@@ -1,13 +1,14 @@
 import './nav.css';
 
-import { FaHome, FaUserGraduate, FaBook, FaGlobe } from 'react-icons/fa';
-import { BsFillChatDotsFill } from 'react-icons/bs';
-import { MdHomeRepairService } from 'react-icons/md';
-import { IoMdBookmarks } from 'react-icons/io';
-import { Link } from 'react-scroll';
-import { useDispatch, useSelector } from 'react-redux';
+import {FaHome, FaUserGraduate, FaBook, FaGlobe} from 'react-icons/fa';
+import {BsFillChatDotsFill} from 'react-icons/bs';
+import {MdHomeRepairService} from 'react-icons/md';
+import {IoMdBookmarks} from 'react-icons/io';
+import {Link} from 'react-scroll';
+import {useDispatch, useSelector} from 'react-redux';
 
 import useTranslation from '../../hooks/useTranslation';
+import {useEffect} from "react";
 
 export default function Nav() {
     const dispatch = useDispatch();
@@ -15,9 +16,12 @@ export default function Nav() {
     const languageState = useSelector((state: any) => state.changeLanguage);
 
     const toggleLanguage = () => {
-        setLanguage(languageState ? 'es' : 'en');
         dispatch({type: 'CHANGE_LANGUAGE', payload: !languageState});
     };
+
+    useEffect(() => {
+        setLanguage(languageState ? 'es' : 'en');
+    }, [languageState, setLanguage]);
 
     return (
         <nav>
